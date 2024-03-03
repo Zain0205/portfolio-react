@@ -1,11 +1,20 @@
-import React from 'react'
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Education from "./pages/Education";
+import Hero from "./pages/Hero";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
-    <div>
-      <h1>Comming Soon</h1>
-    </div>
-  )
+    <>
+    <Navbar />
+    <Hero />
+    <About />
+    <Education />
+    <Skills />
+    </>
+  );
 }
 
-export default App
+export default App;
+
