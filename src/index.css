@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hamburger > span:nth-child(1) {
+  @apply rotate-45
+}
+
+.hamburger > span:nth-child(2) {
+  @apply scale-0
+}
+
+.hamburger > span:nth-child(3) {
+  @apply -rotate-45
+}
+
+/* * {
+  border: 1px solid black;
+} */
