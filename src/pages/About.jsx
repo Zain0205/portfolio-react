@@ -3,8 +3,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-// import profile from "../assets/profile.png";
 import SocialMedia from "../components/SocialMedia";
+// import profile from "../assets/profile.png";
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
         >
           <div className="bg-primary w-[263px] h-[328px] absolute -right-2 -bottom-2 top-1 rounded-2xl md:w-[295px] md:h-[391px]" />
           <div className="w-64 h-80 rounded-xl mx-auto bg-white border border-primary mb-5 px-8 flex items-center justify-center relative md:w-72 md:h-96">
-            <div className="overflow-hidden absolute bottom-0 px-4 w-full h-full">
+            <div className="overflow-hidden absolute md:-bottom-2 px-4 w-full h-full">
               {/* <img src={profile} alt="my profile" /> */}
             </div>
           </div>
@@ -44,16 +44,16 @@ export default function About() {
                 <FaGithub />
               </SocialMedia>
               <SocialMedia>
-                <FaWhatsapp />
+                <FaLinkedin />
               </SocialMedia>
               <SocialMedia>
                 <FaInstagram />
               </SocialMedia>
               <SocialMedia>
-                <FaLinkedin />
+                <FaDiscord />
               </SocialMedia>
               <SocialMedia>
-                <FaDiscord />
+                <FaWhatsapp />
               </SocialMedia>
             </div>
           </div>
