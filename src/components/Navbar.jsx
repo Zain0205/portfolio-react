@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { navbarListItems } from "../data";
 
 export default function Navbar() {
   const [hamburgerActive, setHamburgerActive] = useState(false);
@@ -26,37 +27,6 @@ export default function Navbar() {
   const border = hamburgerActive ? "border-b border-dark" : "";
   const shadow = shadowNav ? "shadow-sm" : "";
 
-  const listItems = [
-    { id: 1,
-      list: "Home",
-      sectionId: "#home",
-    },
-    {
-      id: 2,
-      list: "About",
-      sectionId: "#about",
-    },
-    {
-      id: 6,
-      list: "Education",
-      sectionId: "#edu",
-    },
-    {
-      id: 3,
-      list: "Skils",
-      sectionId: "#skills",
-    },
-    {
-      id: 4,
-      list: "Projects",
-      sectionId: "#projects",
-    },
-    {
-      id: 5,
-      list: "Contact",
-      sectionId: "#contact",
-    },
-  ];
 
   return (
     <header ref={headerRef} className={`shadow-black z-[100] bg-white ${shadow} fixed px-5 ${border} top-0 left-0 w-full flex justify-center items-center md:px-8 lg:px-36`}>
@@ -74,7 +44,7 @@ export default function Navbar() {
           </button>
           <nav className={`${displayNavigation} absolute bg-primary lg:w-[50vw] shadow-lg w-full right-0 top-[4.3rem] lg:block lg:static lg:bg-transparent lg:shadow-none lg:rounded-none lg:max-w-full`}>
             <ul className="block lg:justify-between lg:items-center lg:flex w-full">
-              {listItems.map((item) => (
+              {navbarListItems.map((item) => (
                 <ListItem onClick={handleNavigationClick} key={item.id} page={item.sectionId}>
                   {item.list}
                 </ListItem>
@@ -90,9 +60,10 @@ export default function Navbar() {
   );
 }
 
-function ListItem({ children, page, onClick }) {
+
+function ListItem({ children, page, ...props }) {
   return (
-    <li onClick={onClick} className="group lg:py-2">
+    <li {...props} className="group lg:py-2">
       <a
         href={page}
         className="text-md font-semibold text-white py-3 lg:py-1 px-5 md:px-8 lg:text-dark hover:bg-secondary hover:text-dark flex lg:hover:bg-transparent lg:hover:text-primary lg:hover:border-b-2 lg:hover:border-primary lg:px-0 lg:mx-"
