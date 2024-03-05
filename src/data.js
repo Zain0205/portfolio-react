@@ -11,7 +11,7 @@ import vscodelogo from "./assets/img/vscodelogo.png";
 import githublogo from "./assets/img/githublogo.png";
 import npmlogo from "./assets/img/npmlogo.png";
 
-import project1 from "./assets/img/project.png"
+import project1 from "./assets/img/project.png";
 import project2 from "./assets/img/project2.png";
 import project3 from "./assets/img/project3.png";
 import project4 from "./assets/img/project4.png";
@@ -21,27 +21,31 @@ export const projects = [
     id: 1,
     img: project1,
     title: "Netflix Clone",
-    description: "dsds dsdsdsa dsdads adsdsad dsada dsadsa dasd asdasd asdsadsa da"
+    description: `I made a web application that is similar to the Netflix website. This website was made with a responsive design so that the user experience is better. This website was created using reactjs and tailwindcss. This application utilizes the API from TMD (The Movie Database)`,
+    link: "https://github.com/Zain0205/netflix-clone",
   },
   {
     id: 2,
     img: project2,
     title: "Weather App",
-    description: "ssssssssssssssssssssssssssssss sssssssssssssssssssss sssssssssssssssssss sssssssssss"
+    description:"In this project I created a weather application using React.js and Tailwindcss by utilizing the openweathermap api. This application allows users to search and display current and future weather forecasts for a specified location. With a clean and responsive display, users can easily obtain information about temperature, humidity, wind speed and other weather conditions.",
+    link: "https://github.com/Zain0205/weather-app",
   },
   {
     id: 3,
     img: project3,
     title: "Quix App",
-    description: "lorem ipsumdolorsit amet"
+    description: "In this project I created a simple quiz application using React.js and Tailwindcss, displaying a variety of interesting quiz questions in a limited time.",
+    link: "https://github.com/Zain0205/quiz-app",
   },
   {
     id: 4,
     img: project4,
     title: "Contact List",
-    description: "COntact list using vue js"
-  }
-]
+    description: "In this project I created a contact list website using Vue 3 with responsive design, this website can store a person's name, phone number and email",
+    link: "https://github.com/Zain0205/contact-list-program",
+  },
+];
 
 export const tools = [
   {
@@ -66,8 +70,8 @@ export const tools = [
     id: 4,
     img: npmlogo,
     title: "NPM",
-    level: "Beginner"
-  }
+    level: "Beginner",
+  },
 ];
 
 export const skills = [
@@ -139,5 +143,34 @@ export const educations = [
     instasi: "SD Laboratorium PGSD FIP UNJ",
     jurusan: "Belum Ada",
     tahun: "2011 - 2017",
+  },
+];
+
+export const navbarListItems = [
+  { id: 1, list: "Home", sectionId: "#home" },
+  {
+    id: 2,
+    list: "About",
+    sectionId: "#about",
+  },
+  {
+    id: 6,
+    list: "Education",
+    sectionId: "#edu",
+  },
+  {
+    id: 3,
+    list: "Skils",
+    sectionId: "#skills",
+  },
+  {
+    id: 4,
+    list: "Projects",
+    sectionId: "#projects",
+  },
+  {
+    id: 5,
+    list: "Contact",
+    sectionId: "#contact",
   },
 ];
