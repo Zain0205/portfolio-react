@@ -25,7 +25,7 @@ export default function Navbar() {
   const activatedHamburger = hamburgerActive ? "hamburger" : "";
   const displayNavigation = hamburgerActive ? "flex" : "hidden";
   const border = hamburgerActive ? "border-b border-dark" : "";
-  const shadow = shadowNav ? "shadow-sm" : "";
+  const shadow = shadowNav ? "shadow-sm fixed" : " absolute";
 
   return (
     <>
