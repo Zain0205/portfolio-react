@@ -69,8 +69,8 @@ function ProjectCard({ img, title, link, desc }) {
         }}
         whileInView={{
           opacity: 1,
-          x:0,
-          y:0
+          x: 0,
+          y: 0,
         }}
         transition={{
           duration: 1,
