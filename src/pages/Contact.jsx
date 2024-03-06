@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="contact" className="pt-28 pb-28">
+    <section id="contact" className="pt-28 pb-28 w-full">
       <motion.div
         initial={{
           scale: 0.5,

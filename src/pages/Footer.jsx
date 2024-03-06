@@ -8,7 +8,7 @@ import { FaArrowUp } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="pt-16 pb-16 bg-dark relative">
+    <footer className="pt-16 pb-16 bg-dark relative w-full">
       <div className="px-5 md:px-8 lg:px-36">
         <div className="flex flex-col">
           {/* <div className="mb-5 md:text-center">

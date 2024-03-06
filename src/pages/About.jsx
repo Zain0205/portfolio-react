@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="md:max-h-screen px-5 pt-40 pb-16 lg:px-36 bg-gradient-to-b via-white from-secondary to-white">
+    <section id="about" className="md:max-h-screen px-5 pt-40 pb-16 lg:px-36 bg-gradient-to-b via-white from-secondary to-white w-full">
       <div className="flex flex-col gap-y-5 md:flex-row md:items-center md:gap-x-10">
         <motion.div
           initial={{

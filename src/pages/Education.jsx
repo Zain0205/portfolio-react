@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Education() {
   return (
     <>
-      <section id="edu" className="pt-28 pb-16 px-5 md:px-8 lg:px-36">
+      <section id="edu" className="pt-28 pb-16 px-5 md:px-8 lg:px-36 w-full">
         <h1 className="text-primary font-semibold text-3xl mb-10 xl:text-4xl">Education</h1>
         <div className="md:flex md:justify-end w-full">
           <div className="px-4 pt-3 pb-[0.1px] w-full border-l-4 ml-[2.5px] border-primary">

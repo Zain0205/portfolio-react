@@ -9,7 +9,7 @@ export default function Skills() {
   const toolIsActive = !skillIsOpen ? "bg-primary text-white" : "bg-white text-dark";
 
   return (
-    <section id="skills" className="pt-28 pb-16 lg:pb-36">
+    <section id="skills" className="pt-28 pb-16 lg:pb-36 w-full">
       <div className="px-5 md:px-8 lg:px-36">
         <h1 className="text-3xl font-semibold text-primary lg:text-4xl">Skills</h1>
         <div className="mt-5">

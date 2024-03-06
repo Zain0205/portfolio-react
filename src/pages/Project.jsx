@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Project() {
   return (
     <>
-      <section id="projects" className="pt-32 pb-16">
+      <section id="projects" className="pt-32 pb-16 w-full">
         <div className="px-5 md:px-8 lg:px-36">
           <h1 className="text-primary font-semibold text-3xl lg:text-4xl">Projects</h1>
           <div className="flex flex-wrap gap-y-10 gap-x-4 items-center justify-center mt-12">
