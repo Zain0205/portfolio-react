@@ -9,9 +9,9 @@ export default function Skills() {
   const toolIsActive = !skillIsOpen ? "bg-primary text-white" : "bg-white text-dark";
 
   return (
-    <section id="skills" className="pt-28 pb-28">
+    <section id="skills" className="pt-28 pb-16 lg:pb-36">
       <div className="px-5 md:px-8 lg:px-36">
-        <h1 className="text-3xl font-semibold text-primary">Skills</h1>
+        <h1 className="text-3xl font-semibold text-primary lg:text-4xl">Skills</h1>
         <div className="mt-5">
           <div className="flex items-center gap-x-2">
             <button onClick={() => setSkillIsOpen(true)} className={`${skillIsActive} font-semibold text-md px-4 py-2 border border-primary rounded-sm`}>
@@ -22,7 +22,21 @@ export default function Skills() {
             </button>
           </div>
           <div className="flex flex-wrap gap-x-2 gap-y-4 md:gap- mt-5">
-            {skillIsOpen ? skills.map((skill) => <SkillCard key={skill.id} img={skill.img} title={skill.title} level={skill.level} />) : tools.map((tool) => <SkillCard key={tool.id} img={tool.img} title={tool.title} level={tool.level} />)}
+            {skillIsOpen ? 
+              (skills.map((skill) =>  (
+                <SkillCard 
+                  key={skill.id} 
+                  img={skill.img} 
+                  title={skill.title} 
+                  level={skill.level} 
+                />
+              ))) : (tools.map((tool) => (
+                <SkillCard 
+                  key={tool.id} 
+                  img={tool.img} 
+                  title={tool.title} 
+                  level={tool.level} 
+                />)))}
           </div>
         </div>
       </div>
@@ -33,7 +47,7 @@ export default function Skills() {
 function SkillCard({ img, title, level }) {
   return (
     <motion.div
-      className="w-full pr-8 h-16 sm:w-[48.9%] lg:w-[32.5%] xl:w-[24.2%] border border-dark shadow-lg rounded-md group px-2 flex items-center gap-x-3"
+      className="w-full pr-8 h-16 cursor-pointer sm:w-[48.9%] lg:w-[32.5%] xl:w-[24.2%] border border-dark shadow-lg rounded-md group px-2 flex items-center gap-x-3"
       initial={{
         y: 200,
         opacity: 0.8,
