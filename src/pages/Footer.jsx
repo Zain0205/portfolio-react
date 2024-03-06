@@ -4,10 +4,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import SocialMedia from "../components/SocialMedia";
+import { FaArrowUp } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="pt-16 pb-16 bg-dark">
+    <footer className="pt-16 pb-16 bg-dark relative">
       <div className="px-5 md:px-8 lg:px-36">
         <div className="flex flex-col">
           {/* <div className="mb-5 md:text-center">
@@ -44,6 +45,11 @@ export default function Footer() {
           </div>
           <p className="mt-8 text-center text-slate-200">© 2024 Created by Fahmi Zain</p>
         </div>
+      </div>
+       <div className={`h-12 z-[100] w-12 bg-primary cursor-pointer absolute -top-5 right-4 md:right-8 lg:right-36 animate-bounc rounded-full flex items-center justify-center border-2 border-white`}>
+        <a href="#home">
+          <FaArrowUp className="text-xl text-white" />
+        </a>
       </div>
     </footer>
   );
