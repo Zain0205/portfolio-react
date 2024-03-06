@@ -72,7 +72,7 @@ export default function About() {
                     }}
                     className="lg:text-lg text-justify indent-7"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deleniti rerum impedit incidunt voluptas officia voluptatum at, recusandae iure distinctio ipsam, quod saepe repudiandae maxime.
+                  Hi everyone, my name is Fahmi Zain, I am a College Student in from Esa Unggul University and I am from Jakarta, I am beginner experienced in FrontEnd Web Development and i really enjoy writing code.
                   </motion.p>
                 </div>
                 <div className="w-full md:w-1/2">
@@ -92,7 +92,7 @@ export default function About() {
                     }}
                     className="lg:text-lg text-justify indent-7"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo necessitatibus praesentium obcaecati similique dolorum modi nesciunt quaerat nihil natus eaque.
+                   I can create you a stunning website for your business, I want everyone to know me in the most creative way, I can work indiviually or in a team. if you interested in hiring me, please contact in the listed contact
                   </motion.p>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function About() {
               }}
               className="font-semibold text-primary text-3xl xl:text-4xl mb-4"
             >
-              Mari Berteman
+              Social Media
             </motion.h1>
             <motion.p
               initial={{
@@ -131,7 +131,7 @@ export default function About() {
               }}
               className="mb-3"
             >
-              Anda dapat menghubungi saya melalui sosial media di bawah ini
+              You can contact me through the social media below
             </motion.p>
             <div className="flex mt-5">
               <SocialMedia delay={0}>
