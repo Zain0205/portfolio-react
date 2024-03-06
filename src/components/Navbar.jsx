@@ -25,11 +25,11 @@ export default function Navbar() {
   const activatedHamburger = hamburgerActive ? "hamburger" : "";
   const displayNavigation = hamburgerActive ? "flex" : "hidden";
   const border = hamburgerActive ? "border-b border-dark" : "";
-  const shadow = shadowNav ? "shadow-sm fixed" : "abdolute";
+  const shadow = shadowNav ? "shadow-sm" : "";
 
   return (
     <>
-      <header ref={headerRef} className={`shadow-black z-[100] bg-white ${shadow} px-5 ${border} top-0 left-0 right-0 flex justify-center items-center md:px-8 lg:px-36`}>
+      <header ref={headerRef} className={`shadow-black z-[100] bg-white ${shadow} fixed px-5 ${border} top-0 left-0 right-0 flex justify-center items-center md:px-8 lg:px-36`}>
         <div className="flex justify-between items-center w-full">
           <div className="w-full">
             <a href="#" className="font-bold text-xl block py-5 text-dark lg:text-2xl">
