@@ -5,7 +5,7 @@ import profile from "../assets/profile.png";
 
 function Hero() {
   return (
-    <section id="home" className="pt-32 pb-16 flex items-center bg-gradient-to-t from-secondary via-white to-white justify-center flex-col gap-y-8 md:flex-row md:px-8 md:pt-24 lg:h-screen lg:pt-0 lg:pb-0 w-full">
+    <section id="home" className="pt-32 pb-16 flex items-center bg-gradient-to-t from-secondary via-white to-white justify-center flex-col gap-y-8 md:flex-row md:px-8 md:pt-24 lg:h-screen lg:pt-0 lg:pb-0 w-full overflow-x-hidden">
       <motion.div
         initial={{
           x: 300,
