@@ -23,7 +23,7 @@ export const projects = [
     title: "Netflix Clone",
     description: `I made a web application that is similar to the Netflix website. This website was made with a responsive design so that the user experience is better. This website was created using reactjs and tailwindcss. This application utilizes the API from TMD (The Movie Database)`,
     link: "https://github.com/Zain0205/netflix-clone",
-    delay: 0
+    techstack: [reactlogo, tailwindlogo]
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const projects = [
     title: "Weather App",
     description:"In this project I created a weather application using React.js and Tailwindcss by utilizing the openweathermap api. This application allows users to search and display current and future weather forecasts for a specified location. With a clean and responsive display, users can easily obtain information about temperature, humidity, wind speed and other weather conditions.",
     link: "https://github.com/Zain0205/weather-app",
-    delay: 0.2
+    techstack: [reactlogo, tailwindlogo]
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const projects = [
     title: "Quix App",
     description: "In this project I created a simple quiz application using React.js and Tailwindcss, displaying a variety of interesting quiz questions in a limited time.",
     link: "https://github.com/Zain0205/quiz-app",
-    delay: 0.4
+    techstack: [reactlogo, tailwindlogo]
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const projects = [
     title: "Contact List",
     description: "In this project I created a contact list website using Vue 3 with responsive design, this website can store a person's name, phone number and email",
     link: "https://github.com/Zain0205/contact-list-program",
-    delay: 0.8
+    techstack: [vuelogo, csslogo]
   },
 ];
 
