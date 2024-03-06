@@ -22,27 +22,27 @@ const Modal = forwardRef(function Modal({ children }, ref) {
     <>
       <AnimatePresence>
         <motion.dialog
-          // variants={{
-          //   initial: {
-          //     opacity: 0.5,
-          //     scale: 0.6,
-          //   },
-          //   show: {
-          //     opacity: 1,
-          //     scale: 1,
-          //   },
-          //   hide: {
-          //     opacity: 0.5,
-          //     scale: 0.6,
-          //   },
-          // }}
-          // transition={{
-          //   duration: 0.5,
-          //   ease: "backOut",
-          // }}
-          // initial="initial"
-          // exit={controlModal}
-          // animate={controlModal}
+          variants={{
+            initial: {
+              opacity: 0.5,
+              scale: 0.6,
+            },
+            show: {
+              opacity: 1,
+              scale: 1,
+            },
+            hide: {
+              opacity: 0.5,
+              scale: 0.6,
+            },
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "backOut",
+          }}
+          initial="initial"
+          exit={controlModal}
+          animate={controlModal}
           className="backdrop:bg-dark/80 rounded-lg overflow-hidden w-2/3 md:w-1/2 lg:w-1/3"
           ref={modalRef}
         >
